@@ -1,0 +1,122 @@
+.user-reviews {
+  margin-top: 20px;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.star:hover {
+  color: #ffc107; /* Yellow color for hovered stars */
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #001233;
+  border-radius: 4px;
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+label {
+  margin-right: 10px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #001233;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #fff8ee;
+  color: black;
+  outline: 2px solid #001233;
+}
+
+.user-reviews-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space between left and right sections */
+  margin-top: 20px; /* Add margin on top */
+  margin-left: -540px; /* Move the container to the left */
+}
+
+.user-reviews-left {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for a nice effect */
+  width: 300px; /* Fixed width for the left section */
+  max-height: 400px; /* Maximum height for the container */
+  overflow-y: auto; /* Enable vertical scroll when content overflows */
+}
+
+.reviews-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for a nice effect */
+  width: 300px; /* Fixed width for the reviews container */
+  margin-left: 20px; /* Add space between left and right sections */
+  max-height: 280px; /* Maximum height for the container */
+  overflow-y: auto; /* Enable vertical scroll when content overflows */
+}
+
+.reviews-section {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+.reviews-section h3 {
+  margin-bottom: 10px;
+}
+
+.reviews-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reviews-section li {
+  margin-bottom: 10px;
+}
+
+.reviews-section li b {
+  font-weight: bold;
+}
+
+.review-content {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+/* For small screens, move the reviews section below the rating section */
+@media (max-width: 600px) {
+  .user-reviews-container {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    margin-left: 0; /* Remove negative margin */
+    margin-right: 40px;
+  }
+
+  .user-reviews-left,
+  .reviews-container {
+    width: 100%; /* Full width for both sections */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Add top margin to separate sections */
+  }
+}

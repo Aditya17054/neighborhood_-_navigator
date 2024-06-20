@@ -1,0 +1,213 @@
+.heading1 {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.search-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #001233;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 30px;
+  background-color: #001233;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 40px;
+  width: 40px;
+}
+
+.category-filter select:hover {
+  background-color: #fdf8f0;
+}
+
+.category-filter {
+  border: 1px solid #001233;
+  border-radius: 4px 4px 4px 4px;
+  max-width: fit-content;
+}
+
+.search-bar button:hover {
+  background-color: #fdf8f0;
+  color: black;
+  outline: 2px solid #001233;
+}
+
+.search-bar button:focus,
+.category-filter select:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+.category-filter {
+  margin-left: 20px;
+}
+
+.category-filter select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.category-filter select:focus {
+  border-color: #007bff;
+}
+
+.service-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1150px;
+  margin: 0 auto;
+  background-color: #fff8ee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card1 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.service-card1:hover {
+  transform: translateY(-10px);
+}
+
+.service-card1 img.service-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.service-card1 h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.service-card1 p {
+  margin-bottom: 0.5em;
+}
+
+.service-card1 .description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.service-card1 img.placeholder {
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .category-filter {
+    width: 100%;
+  }
+}
+
+.service-card h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.service-details {
+  padding-top: 60px;
+}
+
+/* Add this media query at the end of your Services.css file */
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 170px; /* Add margin-top to move the search/filter below the header */
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .category-filter {
+    width: 100%;
+  }
+}

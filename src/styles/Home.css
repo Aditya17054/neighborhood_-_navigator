@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.home {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+}
+
+.hero {
+  background: url("https://4kwallpapers.com/images/wallpapers/taj-mahal-india-sunset-orange-sky-wonders-of-the-world-3840x2160-4651.jpg")
+    no-repeat center center/cover;
+  color: white;
+  padding: 90px 20px;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  font-size: 30px;
+  transform: translateY(-30px);
+  color: black;
+}
+
+.hero-buttons {
+  padding-top: 24%;
+  transform: translateY(140px);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #001233;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.features,
+.about-us,
+.gallery,
+.testimonials,
+.contact-us {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feature-list,
+.gallery-list,
+.testimonial-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #001233;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  background-color: #ded3c5;
+  transform: translateY(-5px);
+}
+
+.feature-item i,
+.social-links i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.details-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: #001233;
+  text-decoration: none;
+}
+
+.gallery-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery-item {
+  flex: 1;
+  margin: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #001233;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  color: #007bff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #0056b3;
+}
+
+.contact-inputs {
+  margin-bottom: 15px;
+  width: 30%;
+  transform: translateX(320px);
+}
+
+.contact-input {
+  position: relative;
+}
+
+.contact-input label {
+  margin-bottom: 5px;
+}
+
+.contact-input input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-input {
+  margin-left: 750px;
+  width: calc(30%);
+  transform: translateY(-230px);
+}
+
+.message-input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.message-input textarea {
+  width: 80%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.button {
+  background-color: #001233;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transform: translateY(-190px);
+}
+
+.button:hover {
+  background-color: #ded3c5;
+  color: black;
+  outline: 2px solid #001233;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.form1 {
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    font-size: 20px;
+    transform: translateY(0);
+  }
+
+  .hero-buttons {
+    padding-top: 10%;
+    transform: translateY(0);
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .contact-inputs,
+  .message-input {
+    width: 100%;
+    transform: translate(0);
+    margin-left: 0;
+  }
+
+  .button {
+    transform: translateY(0);
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Add this media query at the end of your Home.css file */
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 300px; /* Adjusted padding to create space for the header */
+  }
+
+  .features,
+  .about-us,
+  .gallery,
+  .testimonials,
+  .contact-us {
+    padding-top: 230px; /* Adjusted padding to create space for the header */
+  }
+}
