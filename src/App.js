@@ -71,7 +71,7 @@ function App() {
         </header>
         <div className="main-content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/list" element={<ServiceListing />} />
             <Route path="/services/:id" element={<ServiceDetails />} />
